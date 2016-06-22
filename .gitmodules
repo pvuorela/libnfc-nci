@@ -1,0 +1,3 @@
+[submodule "libnfc-nci"]
+	path = libnfc-nci
+	url = https://github.com/NXPNFCLinux/linux_libnfc-nci.git
