@@ -51,7 +51,7 @@ rm -f %{buildroot}%{_libdir}/*.la
 %defattr(-,root,root,-)
 %config /etc/libnfc-brcm.conf
 %config /etc/libnfc-nxp.conf
-/usr/lib/libnfc_nci_linux-1.so
+/usr/lib/libnfc_nci_linux-1.so.*
 /usr/lib/libnfc_nci_linux.so
 
 %files devel
