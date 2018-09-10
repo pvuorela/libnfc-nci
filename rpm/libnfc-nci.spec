@@ -49,15 +49,18 @@ rm -f %{buildroot}%{_libdir}/*.la
 
 %files
 %defattr(-,root,root,-)
-%config /etc/libnfc-brcm.conf
-%config /etc/libnfc-nxp.conf
-/usr/lib/libnfc_nci_linux-1.so.*
-/usr/lib/libnfc_nci_linux.so
+%{_libdir}/libnfc_nci_linux.so
+%{_libdir}/libnfc_nci_linux-1.so
+%config /etc/libnfc-nci.conf
+%config /etc/libnfc-nxp-init.conf
+%config /etc/libnfc-nxp-pn547.conf
+%config /etc/libnfc-nxp-pn548.conf
 
 %files devel
 %defattr(-,root,root,-)
 /usr/include/linux_nfc_api.h
 /usr/include/linux_nfc_factory_api.h
+%{_libdir}/pkgconfig/libnfc-nci.pc
 
 %files utils
 %defattr(-,root,root,-)
